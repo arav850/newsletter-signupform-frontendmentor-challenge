@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Myfont;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Myfont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+}
+.card {
+  display: flex;
+  width: 700px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}
+.left {
+  width: 60%;
+}
+.right {
+  width: 40%;
+}
+
+.right img {
+  width: 100%;
+}
+.card h1 {
+  font-size: 50px;
+}
+ul {
+  list-style-image: url("./assets/images/icon-list.svg");
+}
+li {
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 10px;
+}
+.myInputClass {
+  padding: 10px 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 5px;
+}
+input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+button {
+  padding: 15px 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: hsl(235, 18%, 26%);
+  border-radius: 5px;
+  color: #fff;
+}
+
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+  transition: all 1s;
+}
+
+.success {
+  background-color: #fff;
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.success button {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    content: url("/assets/images/illustration-sign-up-mobile.svg");
+  }
+  .card-2 {
+    background-color: #fff;
+    min-height: 100vh;
+  }
+  form {
+    width: 100%;
+  }
+}
+.hide {
+  display: none;
+}
+#errormsg {
+  display: none;
+  color: red;
+}
