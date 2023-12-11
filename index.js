@@ -26,11 +26,12 @@ form.addEventListener("submit", (e) => {
 emailInput.addEventListener('input', function () {
     if (emailInput.value.trim() !== '') {
         submitBtn.style.backgroundColor = 'hsl(4, 100%, 67%)';
-
+    }
+    else {
+        submitBtn.style.backgroundColor = 'hsl(235, 18%, 26%)';
     }
 
 })
-
 
 function setError(value, msg) {
     const inputclass = document.querySelector(".myInputClass")
